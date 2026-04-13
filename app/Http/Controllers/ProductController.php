@@ -44,7 +44,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $suppliers = Supplier::all();
-        return view('products.edit', compact('product', 'suppliers'));
+        return view('products.edit', compact('edit'));
     }
 
     public function update(Request $request, Product $product)
